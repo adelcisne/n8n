@@ -8,6 +8,23 @@
 </head>
 <body>
   prueba
+   <div id="n8n-chat"></div>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat@1.40.4/dist/style.css" rel="stylesheet" />
+<script type="module">
+import { createChat } from
+'https://cdn.jsdelivr.net/npm/@n8n/chat@1.40.4/dist/chat.bundle.es.js';
+createChat({
+webhookUrl: 'https://adecisne.app.n8n.cloud/webhook/b571c000-45ea-49f8-a096-0084852adffd/chat',
+mode: 'window',
+showWelcomeScreen: false,
+loadPreviousSession: true,
+initialMessages: ['Hola! 👋', 'Me llamo Ana, soy un asistente de Wikipedia'],
+i18n: { en: { title: 'WikiBot', subtitle: 'Empieza una conversación ... ',
+footer: '', getStarted: 'Nueva conversacion',
+inputPlaceholder: 'Escribe tu pregunta .. ' } }
+
+});
+</script>
  
   </body>
 </html>
